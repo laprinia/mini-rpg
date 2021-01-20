@@ -11,24 +11,20 @@ public class NavmeshPlayerMovement : MonoBehaviour
     public NavMeshAgent agent;
     public Camera mainCamera;
     public Animator animator;
+    private Vector3 previousPosition;
+    public float curSpeed;
+    float GetCurrentSpeed()
+    {
+        Vector3 curMove = transform.position - previousPosition;
+        curSpeed = curMove.magnitude / Time.deltaTime;
+        previousPosition = transform.position;
+        return curSpeed;
+    }
 
-    private void Start()
-    {
-        // agent.updateRotation = false;
-    }
-    protected bool pathComplete()
-    {
-        if ( Vector3.Distance( agent.destination, agent.transform.position) <= agent.stoppingDistance)
-        {
-            if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
-            {
-                return true;
-            }
-        }
-        return false;
-    }
     private void Update()
     {
+    
+        animator.SetFloat("speed",GetCurrentSpeed());
         
         if (Input.GetMouseButtonDown(0))
         {
@@ -42,14 +38,7 @@ public class NavmeshPlayerMovement : MonoBehaviour
             }
         }
 
-        if (pathComplete()) StartCoroutine(StopAnimationCoroutine());
+       
       
-    }
-
-    IEnumerator StopAnimationCoroutine()
-    {
-        yield return new WaitForSeconds(3f);
-        animator.SetTrigger("isNotWalkingTrigger");
-        
     }
 }
