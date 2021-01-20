@@ -20,19 +20,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a89142d-d6cb-49a4-abcd-d0f20e2c596e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/daruma.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/daruma/source.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/daruma/source/model.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/daruma/source/model.zip.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/daruma/source/model_mesh.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/daruma/source/model_mesh.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/daruma/source/model_mesh.obj.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/daruma/source/model_mesh.obj.mtl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/daruma/source/model_texture.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/daruma/source/model_texture.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/daruma/textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/daruma/textures/model_texture.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/daruma/textures/model_texture.jpeg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/flower.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/flower/source.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/flower/source/flower.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/flower/source/flower.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/flower/textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/flower/textures/3Dfolder2_Tex_Flower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/flower/textures/3Dfolder2_Tex_Flower.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/flower/textures/internal_ground_ao_texture.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Interacteables/flower/textures/internal_ground_ao_texture.jpeg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PJV LAB 4/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PJV LAB 4/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PJV LAB 4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PJV LAB 4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation Controllers/Mamushi/Animations/In Place Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation Controllers/Mamushi/Animations/In Place Walk.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation Controllers/Mamushi/Animations/Walking.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation Controllers/Mamushi/Animations/Walking.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation Controllers/Mamushi/Mamushi Animation Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation Controllers/Mamushi/Mamushi Animation Controller.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation Controllers/Warrior1.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation Controllers/Warrior1/D0306034B1.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation Controllers/Warrior1/D0306034B1.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation Controllers/Warrior1/Ninja Idle.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation Controllers/Warrior1/Ninja Idle.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Mamushi.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/Mamushi.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LookAround.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LookAround.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Post Processing.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Post Processing.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NavmeshPlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NavmeshPlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,15 +60,27 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scriptable Objects/Items/Scripts/DefaultObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scriptable Objects/Inventory/Scripts/InventoryObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NavmeshPlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LookAround.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scriptable Objects/Items/Scripts/ItemObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThirdPersonCharacter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Item.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ThirdPersonCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scriptable Objects/Items/Scripts/ItemObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scriptable Objects/Items/Scripts/DefaultObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scriptable Objects/Items/Scripts/ConsumableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scriptable Objects/Items/Scripts/WeaponObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scriptable Objects/Inventory/Scripts/InventoryObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/LookAround.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NavmeshPlayerMovement.cs" />
       </list>
@@ -97,7 +126,8 @@
       <updated>1610739217981</updated>
       <workItem from="1610739231219" duration="1241000" />
       <workItem from="1611088512660" duration="9013000" />
-      <workItem from="1611152317214" duration="1113000" />
+      <workItem from="1611152317214" duration="9004000" />
+      <workItem from="1611179425162" duration="3767000" />
     </task>
     <servers />
   </component>

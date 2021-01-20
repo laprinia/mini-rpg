@@ -7,7 +7,7 @@ using UnityStandardAssets.Characters.ThirdPerson;
 
 public class NavmeshPlayerMovement : MonoBehaviour
 {
-   // public ThirdPersonCharacter character;
+    public InventoryObject inventory;
     public NavMeshAgent agent;
     public Camera mainCamera;
     public Animator animator;
@@ -36,9 +36,26 @@ public class NavmeshPlayerMovement : MonoBehaviour
                 agent.SetDestination(hit.point);
                
             }
+        }else if (Input.GetMouseButtonDown(1))
+        {
+            
+            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
+            {
+                Debug.Log("tried getting item "+ hit.transform.name);
+                var item = hit.transform.GetComponent<Item>();
+                if (item)
+                {
+                    inventory.AddItem(item.itemObject, 1);
+                    Destroy(hit.transform.gameObject);
+                }
+            }
         }
+    }
 
-       
-      
+    private void OnApplicationQuit()
+    {
+        inventory.Container.Clear();
     }
 }
