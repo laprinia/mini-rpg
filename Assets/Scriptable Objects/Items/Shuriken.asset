@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 298dca08048bf37449ccc81c229721aa, type: 3}
-  m_Name: Kunai
+  m_Name: Shuriken
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 5626651532689485253, guid: cc640a3432742d34e8052fc14d1f0f2e, type: 3}
   itemType: 1
-  description: A Sakura Kunai.
+  description: Two handy shurikens.
   damage: 5
   delayToNextAttack: 1

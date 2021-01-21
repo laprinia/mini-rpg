@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3075f5eeb3eedf4bbbd3b32c89ba729, type: 3}
   m_Name: Daruma
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 4619373222072002506, guid: b8f90354ecd59034ba1eab4f28111632, type: 3}
   itemType: 0
   description: A symbol of luck.
   consumableType: 0
