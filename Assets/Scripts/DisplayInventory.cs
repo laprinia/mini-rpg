@@ -24,8 +24,21 @@ public class DisplayInventory : MonoBehaviour
     public int yOffset;
     Dictionary<InventorySlot,GameObject> itemDisplayed=new Dictionary<InventorySlot, GameObject>();
 
+    public void binItemByObj(GameObject obj)
+    {
+        InventorySlot slot= itemDisplayed.FirstOrDefault(x => x.Value == obj).Key;
+        
+        if ( slot.item.itemType.Equals(ItemType.Consumable)||slot.item.itemType.Equals(ItemType.Default))
+        {
+            slot.amount = 0;
+            Destroy(obj);
+        }
+        Destroy(mouseItem.obj);
+        mouseItem.item = null;
+    }
     void Start()
     {
+        
         CreateDisplay();
     }
     
@@ -65,10 +78,10 @@ public class DisplayInventory : MonoBehaviour
                 
                 itemDisplayed.Add(inventory.Container[i],obj);
                 
-                AddEvent(obj, EventTriggerType.PointerClick, delegate { OnClick(obj); });
-                // AddEvent(obj, EventTriggerType.BeginDrag, delegate { OnBeginDrag(obj); });
-                // AddEvent(obj, EventTriggerType.EndDrag, delegate { OnEndDrag(obj); });
-                // AddEvent(obj, EventTriggerType.Drag, delegate { OnDrag(obj); });
+                AddEvent(obj, EventTriggerType.PointerClick, delegate { OnClick(obj); }); AddEvent(obj, EventTriggerType.BeginDrag, delegate { OnBeginDrag(obj); });
+                AddEvent(obj, EventTriggerType.EndDrag, delegate { OnEndDrag(obj); }); 
+                AddEvent(obj, EventTriggerType.Drag, delegate { OnDrag(obj); });
+                AddEvent(obj, EventTriggerType.PointerEnter, delegate { OnEnter(obj); });
             }
         }
     }
@@ -130,11 +143,12 @@ public class DisplayInventory : MonoBehaviour
         rt.sizeDelta=new Vector2(50,50);
         mouseObj.transform.SetParent(transform.parent);
         var img = mouseObj.AddComponent<Image>();
-        img.sprite = obj.GetComponent<Sprite>();
+        img.sprite = obj.GetComponent<Image>().sprite;
         img.raycastTarget = false;
         mouseItem.obj = mouseObj;
-        //mouseItem.item = inventory.Container[index];
-
+        InventorySlot slot = itemDisplayed.FirstOrDefault(x => x.Value == gameObject).Key;
+        mouseItem.item = slot;
+        obj.GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 
     void OnDrag(GameObject obj)
@@ -147,12 +161,17 @@ public class DisplayInventory : MonoBehaviour
 
     void OnEndDrag(GameObject obj)
     {
-        if (mouseItem.hoverObj)
-        {
-            
-        }
-        Destroy(mouseItem.obj);
-        mouseItem.item = null;
+        //if is in bin
+        
+        obj.GetComponent<CanvasGroup>().blocksRaycasts = true;
+       
+    }
+
+    void OnEnter(GameObject obj)
+    {
+        mouseItem.hoverObj = obj;
+      
+        
     }
     Vector3 GetPosition(int i)
     {

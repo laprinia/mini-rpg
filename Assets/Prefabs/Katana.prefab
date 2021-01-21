@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9046449333853316376}
   - component: {fileID: 2270763553937220702}
   - component: {fileID: 6932702377135954710}
+  - component: {fileID: 4864416488171818832}
   m_Layer: 5
   m_Name: Katana
   m_TagString: Untagged
@@ -133,6 +134,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates: []
+--- !u!225 &4864416488171818832
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9046449333853316374}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &9046449334350270062
 GameObject:
   m_ObjectHideFlags: 0
