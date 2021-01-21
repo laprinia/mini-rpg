@@ -7,6 +7,8 @@ using UnityStandardAssets.Characters.ThirdPerson;
 
 public class Player: MonoBehaviour
 {
+    public int luck = 0;
+    public int sanity = 100;
     public InventoryObject inventory;
     public NavMeshAgent agent;
     public Camera mainCamera;
@@ -54,6 +56,15 @@ public class Player: MonoBehaviour
         }
     }
 
+    public void IncreaseSanity(int amount)
+    {
+        Debug.Log("increased sanity by "+ amount);
+        sanity += amount;
+    }
+    public void IncreaseLuck(int amount)
+    {
+        luck += amount;
+    }
     private void OnApplicationQuit()
     {
         inventory.Container.Clear();
