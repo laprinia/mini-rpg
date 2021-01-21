@@ -12,7 +12,7 @@ public class ShowInventory : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            Debug.Log("c,awdl;,dw");
+            
             isShowing = !isShowing;
             canvas.SetActive(isShowing);
 

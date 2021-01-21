@@ -131,8 +131,6 @@ public class DisplayInventory : MonoBehaviour
         {
             //    TODO unequip & equip
         }
-        
-
 
     }
 
@@ -164,6 +162,9 @@ public class DisplayInventory : MonoBehaviour
         //if is in bin
         
         obj.GetComponent<CanvasGroup>().blocksRaycasts = true;
+        
+        Destroy(mouseItem.obj);
+        mouseItem.item = null;
        
     }
 
