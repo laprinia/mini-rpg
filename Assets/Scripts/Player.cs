@@ -47,7 +47,6 @@ public class Player: MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                animator.SetTrigger("isWalkingTrigger");
                 agent.SetDestination(hit.point);
                
             }
@@ -58,23 +57,71 @@ public class Player: MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-        
+               
+                if(hit.transform.tag.Equals("Enemy"))
+                {
+                    AttackEnemy(hit);
+                }
                 var item = hit.transform.GetComponent<Item>();
                 if (item)
                 {
                     inventory.AddItem(item.itemObject, 1);
                     Destroy(hit.transform.gameObject);
                 }
+                
             }
         }
         else if (Input.GetKeyDown(KeyCode.X))
         {
             isRanged = !isRanged;
-            katana.gameObject.SetActive(isRanged);
-            shuriken.gameObject.SetActive(!isRanged);
+            katana.gameObject.SetActive(!isRanged);
+            shuriken.gameObject.SetActive(isRanged);
         }
     }
 
+    public void AttackEnemy(RaycastHit hit)
+    {
+        if (isRanged)
+        {
+            agent.SetDestination(hit.point);
+            StartCoroutine(WaitToArriveCoroutine("isThrowingTrigger",true));
+        }
+        else
+        {
+             
+            agent.SetDestination(hit.point);
+            StartCoroutine(WaitToArriveCoroutine("isSlashingTrigger",false));
+
+        }
+    }
+
+    IEnumerator WaitToArriveCoroutine(String trigger,bool isRanged)
+    {
+        while (agent.pathPending)
+        {
+            
+            yield return null;
+        }
+
+        while (agent.remainingDistance >= agent.stoppingDistance+(isRanged?6f:0f))
+        {
+            
+            yield return null;
+        }
+
+        if (isRanged)
+        {
+            agent.isStopped = true;
+        }
+        while (agent.velocity.sqrMagnitude != 0)
+        {
+            
+            yield return null;
+        }
+        yield return new WaitForSeconds(1);
+        animator.SetTrigger(trigger);
+        
+    }
     public void IncreaseSanity(int amount)
     {
         sanity += amount;
