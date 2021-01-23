@@ -93,6 +93,8 @@ public class Player: MonoBehaviour
             StartCoroutine(WaitToArriveCoroutine("isSlashingTrigger",false));
 
         }
+        //todo take damage
+        //hit.collider.gameObject
     }
 
     IEnumerator WaitToArriveCoroutine(String trigger,bool isRanged)
