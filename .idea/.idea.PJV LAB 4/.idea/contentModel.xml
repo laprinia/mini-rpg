@@ -6,11 +6,26 @@
     <e p="E:\Projects\PJV LAB 4" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="HealthBar.cs" t="Include" />
-        <e p="Luck.cs" t="Include" />
-        <e p="LuckBar.cs" t="Include" />
-        <e p="Sanity.cs" t="Include" />
-        <e p="SanityBar.cs" t="Include" />
+        <e p="Demon Girl" t="Include">
+          <e p="_DLNK Source" t="Include">
+            <e p="_DLNK Libraries" t="Include">
+              <e p="[dlnk Script Library]" t="Include">
+                <e p="Basic Scripts" t="Include">
+                  <e p="Misc" t="Include">
+                    <e p="CameraOrbit.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="[dlnk Shader Library]" t="Include">
+                <e p="[Shader Pack]" t="Include">
+                  <e p="Deferred" t="Include">
+                    <e p="2FacedCutoutDef.shader" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Scriptable Objects" t="Include">
           <e p="Inventory" t="Include">
             <e p="Scripts" t="Include">
@@ -29,10 +44,17 @@
         <e p="Scripts" t="Include">
           <e p="Bin.cs" t="Include" />
           <e p="DisplayInventory.cs" t="Include" />
+          <e p="Enemy.cs" t="Include" />
+          <e p="Health.cs" t="Include" />
+          <e p="HealthBar.cs" t="Include" />
           <e p="Item.cs" t="Include" />
           <e p="LookAround.cs" t="Include" />
+          <e p="Luck.cs" t="Include" />
+          <e p="LuckBar.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="Sanity.cs" t="Include" />
+          <e p="SanityBar.cs" t="Include" />
           <e p="ShowInventory.cs" t="Include" />
         </e>
         <e p="Skybox" t="Include">
