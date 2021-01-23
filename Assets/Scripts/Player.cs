@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
-using UnityStandardAssets.Characters.ThirdPerson;
+
 
 public class Player: MonoBehaviour
 {
@@ -118,7 +118,7 @@ public class Player: MonoBehaviour
             
             yield return null;
         }
-        yield return new WaitForSeconds(1);
+        
         animator.SetTrigger(trigger);
         
     }

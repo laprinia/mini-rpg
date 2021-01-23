@@ -22,17 +22,11 @@
     <list default="true" id="6a89142d-d6cb-49a4-abcd-d0f20e2c596e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PJV LAB 4/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PJV LAB 4/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PJV LAB 4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PJV LAB 4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation Controllers/Mamushi/Mamushi Animation Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation Controllers/Mamushi/Mamushi Animation Controller.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bin.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bin.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ButtonScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ButtonScript.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene/NavMesh.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ShowInventory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ShowInventory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ThirdPersonCharacter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ThirdPersonCharacter.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +39,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scriptable Objects/Items/Scripts/DefaultObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scriptable Objects/Inventory/Scripts/InventoryObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sanity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scriptable Objects/Items/Scripts/ItemObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThirdPersonCharacter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LookAround.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -69,6 +65,11 @@
         <option value="$PROJECT_DIR$/Assets/ShowInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DisplayInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LookAround.cs" />
+        <option value="$PROJECT_DIR$/Assets/Luck.cs" />
+        <option value="$PROJECT_DIR$/Assets/LuckBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sanity.cs" />
+        <option value="$PROJECT_DIR$/Assets/SanityBar.cs" />
       </list>
     </option>
   </component>
@@ -116,7 +117,9 @@
       <workItem from="1611152317214" duration="9004000" />
       <workItem from="1611179425162" duration="3860000" />
       <workItem from="1611228379197" duration="24468000" />
-      <workItem from="1611308170864" duration="2966000" />
+      <workItem from="1611308170864" duration="3533000" />
+      <workItem from="1611356634218" duration="505000" />
+      <workItem from="1611358397750" duration="1140000" />
     </task>
     <servers />
   </component>
