@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 
 public class Player: MonoBehaviour
 {
+    public float attackCoolDown=2f;
     public GameObject shuriken;
     public GameObject katana;
     public int luck = 0;
@@ -17,14 +18,22 @@ public class Player: MonoBehaviour
     public Camera mainCamera;
     public Animator animator;
     private Vector3 previousPosition;
+    private bool isAttacking;
     private bool isRanged;
     private float curSpeed;
-
-    private void Start()
+    private WeaponObject shurikenWeaponObject;
+    private WeaponObject katanaWeaponObject;
+    private float attackTimeStamp = 0f;
+ 
+    private void Awake()
     {
         inventory.AddItem(katana.GetComponent<Item>().itemObject,1);
+        katanaWeaponObject = katana.GetComponent<Item>().itemObject as WeaponObject;
         inventory.AddItem(shuriken.GetComponent<Item>().itemObject,1);
+        shurikenWeaponObject=shuriken.GetComponent<Item>().itemObject as WeaponObject;
     }
+
+    
 
     float GetCurrentSpeed()
     {
@@ -52,7 +61,7 @@ public class Player: MonoBehaviour
             }
         }else if (Input.GetMouseButtonDown(1))
         {
-            if(EventSystem.current.IsPointerOverGameObject()) return;
+            
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
@@ -71,7 +80,7 @@ public class Player: MonoBehaviour
                 
             }
         }
-        else if (Input.GetKeyDown(KeyCode.X))
+        else if (Input.GetKeyDown(KeyCode.X)&& !isAttacking)
         {
             isRanged = !isRanged;
             katana.gameObject.SetActive(!isRanged);
@@ -81,23 +90,29 @@ public class Player: MonoBehaviour
 
     public void AttackEnemy(RaycastHit hit)
     {
+        
+        int damageAmount;
+        Entity entity = hit.collider.gameObject.GetComponent<Entity>();
+        Health entityHealth=hit.collider.gameObject.GetComponent<Health>();
+        isAttacking = true;
         if (isRanged)
         {
+
+            damageAmount = shurikenWeaponObject.damage;
             agent.SetDestination(hit.point);
-            StartCoroutine(WaitToArriveCoroutine("isThrowingTrigger",true));
+            StartCoroutine(GoAndAttackCoroutine("isThrowing",true,entity,entityHealth,damageAmount));
         }
         else
         {
-             
+            damageAmount = katanaWeaponObject.damage;
             agent.SetDestination(hit.point);
-            StartCoroutine(WaitToArriveCoroutine("isSlashingTrigger",false));
+            StartCoroutine(GoAndAttackCoroutine("isSlashing",false,entity,entityHealth,damageAmount));
 
         }
-        //todo take damage
-        //hit.collider.gameObject
+        
     }
 
-    IEnumerator WaitToArriveCoroutine(String trigger,bool isRanged)
+    IEnumerator GoAndAttackCoroutine(String animatorBool,bool isRanged,Entity entity, Health entityHealth, int damageAmount)
     {
         while (agent.pathPending)
         {
@@ -120,10 +135,24 @@ public class Player: MonoBehaviour
             
             yield return null;
         }
-        
-        animator.SetTrigger(trigger);
-        
+        animator.SetBool(animatorBool,true);
+        while (entityHealth.curHealth>0)
+        {
+            if (Time.time >= attackTimeStamp)
+            {
+                attackTimeStamp = Time.time + attackCoolDown;
+                entity.TakeDamage(damageAmount);
+                
+            }
+            yield return null;
+        }
+
+        isAttacking = false;
+        animator.SetBool(animatorBool,false);
     }
+
+    
+   
     public void IncreaseSanity(int amount)
     {
         sanity += amount;

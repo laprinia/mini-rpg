@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour,Entity
 {
     public Animator animator;
     public Transform[] waypoints;
@@ -41,7 +41,6 @@ public class Enemy : MonoBehaviour
     {
         float currentSpeed = (transform. position - lastPosition).magnitude;
         animator.SetFloat("speed",currentSpeed*10);
-        Debug.Log(currentSpeed* 10);
         lastPosition = transform. position;
     }
     
@@ -87,7 +86,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int amount)
     {
         health.RemoveHealth(amount);
-        if (health.maxHealth <= 0)
+        if (health.curHealth <= 0)
         {
             StartCoroutine(Die());
         }

@@ -1,16 +1,24 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StaticEnemy : MonoBehaviour
+public class StaticEnemy : MonoBehaviour,Entity
 {
     private Health health;
+
+    private void Awake()
+    {
+        health = GetComponent<Health>();
+    }
+
     public void TakeDamage(int amount)
     {
         health.RemoveHealth(amount);
-        if (health.maxHealth <= 0)
+        if (health.curHealth <= 0)
         {
             StartCoroutine(Die());
+           
         }
     }
     private void OnMouseOver()
