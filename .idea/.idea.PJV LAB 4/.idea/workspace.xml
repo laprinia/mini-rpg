@@ -20,188 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a89142d-d6cb-49a4-abcd-d0f20e2c596e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PJV LAB 4/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PJV LAB 4/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PJV LAB 4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PJV LAB 4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation Controllers/Mamushi/Mamushi Animation Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation Controllers/Mamushi/Mamushi Animation Controller.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DGWeapon_albedo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DGWeapon_albedo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DGWeapon_albedo1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DGWeapon_albedo1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DGWeapon_albedo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DGWeapon_albedo2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DGWeapon_albedo3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DGWeapon_albedo3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DGWeapon_albedo4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DGWeapon_albedo4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DGWeapon_cavity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DGWeapon_cavity.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DGWeapon_normals.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DGWeapon_normals.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DGWeapon_occlusion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DGWeapon_occlusion.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_armor_albedo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_armor_albedo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_armor_albedo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_armor_albedo2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_armor_cavity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_armor_cavity.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_armor_normals.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_armor_normals.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_armor_occlusion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_armor_occlusion.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_albedo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_albedo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_albedo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_albedo2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_albedo3.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_albedo3.tif.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_albedo4.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_albedo4.tif.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_albedo5.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_albedo5.tif.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_cavity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_cavity.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_emissive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_emissive.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_normals.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_normals.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_occlusion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_body_occlusion.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_cloth_cavity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_cloth_cavity.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_cloth_normals.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_cloth_normals.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_cloth_occlusion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_cloth_occlusion.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_hairpiece_alb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_hairpiece_alb.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_hairpiece_mns.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_hairpiece_mns.tif.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_hairpiece_nrm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_hairpiece_nrm.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_hairpiece_op.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Maps/dlnk_DemonGirl_hairpiece_op.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Materials/DG_Weapon.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Materials/DG_Weapon.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Materials/DG_armor.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Materials/DG_armor.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Materials/DG_body.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Materials/DG_body.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Materials/DG_cloth.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Materials/DG_cloth.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Materials/dlnk_DemonGirl_hairpiece_op.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Materials/dlnk_DemonGirl_hairpiece_op.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Mesh.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Mesh/DemonGirlMesh.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Mesh/DemonGirlMesh.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Mesh/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Mesh/Materials/Standardmaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Mesh/Materials/Standardmaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/DemonGMotion.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/DemonGMotion.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@Attack01.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@Attack01.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@Attack02.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@Attack02.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@Attack03.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@Attack03.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@AttackSpecial.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@AttackSpecial.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@CombatIdle.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@CombatIdle.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@Cover.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@Cover.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@Die.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@Die.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@FallDown.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@FallDown.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@GetHit01.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@GetHit01.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@GetHit02.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@GetHit02.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@Idle01.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@Idle01.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@Idle02.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@Idle02.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@IdletoCombat.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@IdletoCombat.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@Jump.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@Jump.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@RiseUp.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@RiseUp.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@RunCycle.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@RunCycle.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@RunForward.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@RunForward.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@WalkCombatCycle.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@WalkCombatCycle.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@WalkCombatForward.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@WalkCombatForward.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@WalkCycle.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@WalkCycle.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@WalkForward.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/Generic/Humanoid@WalkForward.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@attack00.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@attack00.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@attack01.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@attack01.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@attack02.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@attack02.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@cover00.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@cover00.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@die00.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@die00.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@die01.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@die01.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@fall&amp;riseup00.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@fall&amp;riseup00.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@hit00.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@hit00.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@hit01.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@hit01.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@idle00.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@idle00.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@idlecombat00.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@idlecombat00.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@jump00.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@jump00.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@run00.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@run00.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@walk00.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/Source/Motion/demonGirl@walk00.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/[Prefabs].meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/[Prefabs]/Char_DemonGirl.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/[Prefabs]/Char_DemonGirl.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/[Prefabs]/mask Variant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/Demon Girl/[Prefabs]/mask Variant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/_DLNK Source.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/_DLNK Source/_DLNK Libraries.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/_DLNK Source/_DLNK Libraries/[dlnk Script Library].meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/_DLNK Source/_DLNK Libraries/[dlnk Script Library]/Basic Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/_DLNK Source/_DLNK Libraries/[dlnk Script Library]/Basic Scripts/Misc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/_DLNK Source/_DLNK Libraries/[dlnk Script Library]/Basic Scripts/Misc/CameraOrbit.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/_DLNK Source/_DLNK Libraries/[dlnk Script Library]/Basic Scripts/Misc/CameraOrbit.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/_DLNK Source/_DLNK Libraries/[dlnk Script Library]/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/_DLNK Source/_DLNK Libraries/[dlnk Script Library]/desktop.ini.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/_DLNK Source/_DLNK Libraries/[dlnk Shader Library].meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/_DLNK Source/_DLNK Libraries/[dlnk Shader Library]/[Shader Pack].meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/_DLNK Source/_DLNK Libraries/[dlnk Shader Library]/[Shader Pack]/Deferred.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/_DLNK Source/_DLNK Libraries/[dlnk Shader Library]/[Shader Pack]/Deferred/2FacedCutoutDef.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Demon Girl/_DLNK Source/_DLNK Libraries/[dlnk Shader Library]/[Shader Pack]/Deferred/2FacedCutoutDef.shader.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Objects/Inventory/Scripts/InventoryObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Objects/Inventory/Scripts/InventoryObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DisplayInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DisplayInventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Luck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Luck.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StaticEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StaticEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShowInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShowInventory.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +52,6 @@
         <option value="$PROJECT_DIR$/Assets/Scriptable Objects/Items/Scripts/DefaultObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scriptable Objects/Items/Scripts/ConsumableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scriptable Objects/Items/Scripts/WeaponObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scriptable Objects/Inventory/Scripts/InventoryObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/LookAround.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NavmeshPlayerMovement.cs" />
@@ -252,6 +74,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Luck.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DisplayInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scriptable Objects/Inventory/Scripts/InventoryObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShowInventory.cs" />
       </list>
     </option>
   </component>
@@ -304,7 +128,8 @@
       <workItem from="1611358397750" duration="1764000" />
       <workItem from="1611406180573" duration="6643000" />
       <workItem from="1611488668758" duration="3357000" />
-      <workItem from="1611569943200" duration="7186000" />
+      <workItem from="1611569943200" duration="7315000" />
+      <workItem from="1611577960454" duration="1474000" />
     </task>
     <servers />
   </component>

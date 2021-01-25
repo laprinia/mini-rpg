@@ -4643,7 +4643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1042392427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5462,7 +5462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5795dcb959a55f041b549be8147d0b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1996415142}
+  player: {fileID: 1996415140}
   inventory: {fileID: 11400000, guid: 94ec5a9251805b64b963660b4fd0a037, type: 2}
   xStart: 208.7
   yStart: 417.6
@@ -8556,7 +8556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f6ccbb6f6e388244af3200a0bf8fc85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageMultiplier: 2
+  damageMultiplier: 3
   attackCoolDown: 2
   shuriken: {fileID: 1908736413}
   katana: {fileID: 402001746}

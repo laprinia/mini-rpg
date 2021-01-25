@@ -21,6 +21,7 @@ public class InventoryObject : ScriptableObject
 
         if (!hasItem)
         {
+        
             Container.Add(new InventorySlot(_item,_amount));
         }
     }
