@@ -5,5 +5,6 @@ using UnityEngine;
 public interface Entity
 {
     void TakeDamage(int amount);
-    
+    bool isStatic();
+
 }

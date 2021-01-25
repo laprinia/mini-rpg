@@ -12,7 +12,7 @@ public class Luck : MonoBehaviour
     
     void Start()
     {
-        curLuck = maxLuck;
+        curLuck = 0;
     }
 
    

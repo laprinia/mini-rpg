@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour,Entity
     private float walkTimeStamp = 5f;
     private int attackCoolDown = 3;
     private int walkCoolDown = 5;
-    
+    private bool isAttacking;
     public Transform target;
     private Sanity sanityScript;
     private Luck luckScript;
@@ -56,7 +56,13 @@ public class Enemy : MonoBehaviour,Entity
      ;
             if(distance <= attackRadius && Time.time>=attackTimeStamp) 
             {
+                if (sanityScript.curSanity <= 0)
+                {
+                    animator.ResetTrigger("isAttacking");
+                    transform.GetChild(1).gameObject.SetActive(false);
+                }
                 attackTimeStamp = Time.time + attackCoolDown;
+                transform.GetChild(1).gameObject.SetActive(true);
                 animator.SetTrigger("isAttacking");
                 sanityScript.RemoveSanity(25);
 
@@ -90,6 +96,11 @@ public class Enemy : MonoBehaviour,Entity
         {
             StartCoroutine(Die());
         }
+    }
+
+    public bool isStatic()
+    {
+        return false;
     }
 
     private void OnMouseOver()

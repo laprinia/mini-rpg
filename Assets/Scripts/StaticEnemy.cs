@@ -21,6 +21,12 @@ public class StaticEnemy : MonoBehaviour,Entity
            
         }
     }
+
+    public bool isStatic()
+    {
+        return true;
+    }
+
     private void OnMouseOver()
     {
         transform.GetChild(0).gameObject.SetActive(true);

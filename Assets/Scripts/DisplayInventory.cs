@@ -13,7 +13,7 @@ public class DisplayInventory : MonoBehaviour
 {
     public MouseItem mouseItem=new MouseItem();
     private const int MAX_COUNT = 12;
-    public Player player;
+    public GameObject player;
     public InventoryObject inventory;
     public float xStart=208.7f;
     public float yStart=417.6f;
@@ -108,7 +108,7 @@ public class DisplayInventory : MonoBehaviour
     void OnClick(GameObject gameObject)
     {
         InventorySlot slot = itemDisplayed.FirstOrDefault(x => x.Value == gameObject).Key;
-        
+        Debug.Log(slot.item.name);
         if (slot.item.itemType.Equals(ItemType.Consumable))
         {
             if (slot.amount > 0)
@@ -117,11 +117,11 @@ public class DisplayInventory : MonoBehaviour
             
             if (slot.item.name.Equals("Blue Flower"))
             {
-                player.IncreaseSanity(consumableObject.restorativePower);
+                player.GetComponent<Sanity>().AddSanity(consumableObject.restorativePower);
             }
             else
             {
-                player.IncreaseLuck(consumableObject.restorativePower);
+                player.GetComponent<Luck>().AddLuck(consumableObject.restorativePower);
             }
              slot.amount--;
              Destroy(gameObject);
