@@ -17,7 +17,6 @@ public class ShowInventory : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            
             isShowing = !isShowing;
             canvas.SetActive(isShowing);
 

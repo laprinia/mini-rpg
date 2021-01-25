@@ -68,12 +68,14 @@ public class Player : MonoBehaviour
                 {
                     AttackEnemy(hit);
                 }
-
-                var item = hit.transform.GetComponent<Item>();
-                if (item)
+                else if (hit.transform.GetComponent<Item>())
                 {
-                    inventory.AddItem(item.itemObject, 1);
+                    inventory.AddItem(hit.transform.GetComponent<Item>().itemObject, 1);
                     Destroy(hit.transform.gameObject);
+                }
+                else if(hit.transform.GetComponent<DialogueTrigger>())
+                {
+                    NPCInteract(hit.transform.gameObject);
                 }
             }
         }
@@ -156,6 +158,31 @@ public class Player : MonoBehaviour
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+    }
+
+    void NPCInteract(GameObject trigger)
+    {
+        agent.SetDestination(trigger.transform.position);
+        StartCoroutine(DialogueCoroutine(trigger.GetComponent<DialogueTrigger>()));
+    }
+
+    IEnumerator DialogueCoroutine(DialogueTrigger dialogueTrigger)
+    {
+        while (agent.pathPending)
+        {
+            yield return null;
+        }
+
+        while (agent.remainingDistance >= agent.stoppingDistance)
+        {
+            yield return null;
+        }
+        
+        while (agent.velocity.sqrMagnitude != 0)
+        {
+            yield return null;
+        }
+        dialogueTrigger.TriggerDialogue();
     }
     public void IncreaseSanity(int amount)
     {
