@@ -51,12 +51,13 @@ public class Player : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("in input button 0");
             if (EventSystem.current.IsPointerOverGameObject()) return;
 
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
-            {
+            {   Debug.Log(hit.collider.name);
                 agent.SetDestination(hit.point);
             }
         }
@@ -64,8 +65,10 @@ public class Player : MonoBehaviour
         {
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
+            Debug.Log("in input button 1");
             if (Physics.Raycast(ray, out hit))
             {
+                Debug.Log(hit.collider.name);
                 if (hit.transform.tag.Equals("Enemy"))
                 {
                     AttackEnemy(hit);
@@ -112,7 +115,12 @@ public class Player : MonoBehaviour
         Entity entity = entityGameObj.GetComponent<Entity>();
         Health entityHealth = entityGameObj.GetComponent<Health>();
         String entityName = entityGameObj.name;
-    
+        agent.stoppingDistance = isRanged ? 7.5f : 1.5f;
+        // if (isRanged)
+        // {
+        //     agent.stoppingDistance += 6f;
+        // }
+
         while (agent.pathPending)
         {
             yield return null;
@@ -122,10 +130,7 @@ public class Player : MonoBehaviour
         {
             yield return null;
         }
-        if (isRanged)
-        {
-            agent.isStopped = true;
-        }
+        
         while (agent.velocity.sqrMagnitude != 0)
         {
             yield return null;
@@ -152,12 +157,12 @@ public class Player : MonoBehaviour
 
             yield return null;
         }
-        //transform.LookAt(Vector3.zero);
-        isAttacking = false;
+        
         if (entityName.Equals("Hanako")&& currentQuest.title.Equals("Family Bonds"))
         {
             CompleteHanakoQuest();
         }
+        isAttacking = false;
         animator.SetBool(animatorBool, false);
     }
 
