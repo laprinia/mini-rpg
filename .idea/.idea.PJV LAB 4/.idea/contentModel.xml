@@ -29,6 +29,7 @@
             </e>
           </e>
         </e>
+        <e p="FirstDialogueButton.cs" t="Include" />
         <e p="Scriptable Objects" t="Include">
           <e p="Inventory" t="Include">
             <e p="Scripts" t="Include">
