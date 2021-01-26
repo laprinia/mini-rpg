@@ -6,7 +6,6 @@
     <e p="E:\Projects\PJV LAB 4" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="DialogueManager.cs" t="Include" />
         <e p="Environment" t="Include">
           <e p="Demon Girl" t="Include">
             <e p="_DLNK Source" t="Include">
@@ -29,7 +28,7 @@
             </e>
           </e>
         </e>
-        <e p="FirstDialogueButton.cs" t="Include" />
+        <e p="QuestGiver.cs" t="Include" />
         <e p="Scriptable Objects" t="Include">
           <e p="Inventory" t="Include">
             <e p="Scripts" t="Include">
@@ -48,10 +47,12 @@
         <e p="Scripts" t="Include">
           <e p="Bin.cs" t="Include" />
           <e p="Dialogue.cs" t="Include" />
+          <e p="DialogueManager.cs" t="Include" />
           <e p="DialogueTrigger.cs" t="Include" />
           <e p="DisplayInventory.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
           <e p="Entity.cs" t="Include" />
+          <e p="FirstDialogueButton.cs" t="Include" />
           <e p="Health.cs" t="Include" />
           <e p="HealthBar.cs" t="Include" />
           <e p="Item.cs" t="Include" />
@@ -60,6 +61,8 @@
           <e p="LuckBar.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="Quest.cs" t="Include" />
+          <e p="QuestGoal.cs" t="Include" />
           <e p="Sanity.cs" t="Include" />
           <e p="SanityBar.cs" t="Include" />
           <e p="ShowInventory.cs" t="Include" />

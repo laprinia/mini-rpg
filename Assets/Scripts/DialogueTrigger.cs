@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
+   public QuestGiver questGiver;
     public Dialogue mainDialogue;
     public Dialogue questDialogue;
     public Dialogue conversateDialogue;
@@ -13,14 +14,18 @@ public class DialogueTrigger : MonoBehaviour
     public void TriggerDialogue()
     {
         DialogueManager.instance.StartDialogue(mainDialogue,"Ask her about her daughter","Ask about quest");
+        DialogueManager.instance.getFirstButton().onClick.RemoveAllListeners();
         DialogueManager.instance.getFirstButton().onClick.AddListener(onClickConversate);
-        DialogueManager.instance.getSecondButton().onClick.AddListener(onCLickQuest);
+        DialogueManager.instance.getSecondButton().onClick.RemoveAllListeners();
+        DialogueManager.instance.getSecondButton().onClick.AddListener(onClickQuest);
     }
 
-    public void onCLickQuest()
+    public void onClickQuest()
     {
        DialogueManager.instance.StartDialogue(questDialogue,"Accept","Deny");
+       DialogueManager.instance.getFirstButton().onClick.RemoveAllListeners();
        DialogueManager.instance.getFirstButton().onClick.AddListener(onClickAccept);
+       DialogueManager.instance.getSecondButton().onClick.RemoveAllListeners();
        DialogueManager.instance.getSecondButton().onClick.AddListener(onClickDeny);
        
     }
@@ -32,7 +37,8 @@ public class DialogueTrigger : MonoBehaviour
     public void onClickAccept()
     {
        DialogueManager.instance.StartDialogue(acceptQuestDialogue,null,null);
-       //todo start quest syst
+       questGiver.OpenQuestWindow();
+       
     }
 
     public void onClickDeny()

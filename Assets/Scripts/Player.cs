@@ -8,6 +8,8 @@ using UnityEngine.EventSystems;
 
 public class Player : MonoBehaviour
 {
+    public Quest currentQuest;
+    public int currentSP=0;
     public int damageMultiplier = 2;
     public float attackCoolDown = 2f;
     public GameObject shuriken;
@@ -109,6 +111,7 @@ public class Player : MonoBehaviour
     {
         Entity entity = entityGameObj.GetComponent<Entity>();
         Health entityHealth = entityGameObj.GetComponent<Health>();
+        String entityName = entityGameObj.name;
     
         while (agent.pathPending)
         {
@@ -143,13 +146,18 @@ public class Player : MonoBehaviour
                 {
                     agent.SetDestination(entityGameObj.transform.position);
                 }
+
                 entity.TakeDamage(damageAmount);
             }
 
             yield return null;
         }
-        transform.LookAt(Vector3.zero);
+        //transform.LookAt(Vector3.zero);
         isAttacking = false;
+        if (entityName.Equals("Hanako")&& currentQuest.title.Equals("Family Bonds"))
+        {
+            CompleteHanakoQuest();
+        }
         animator.SetBool(animatorBool, false);
     }
 
@@ -197,5 +205,12 @@ public class Player : MonoBehaviour
     private void OnApplicationQuit()
     {
         inventory.Container.Clear();
+    }
+
+    private void CompleteHanakoQuest()
+    {
+        currentQuest.Goal.isHanakoAtPeace = true;
+        currentSP += currentQuest.experienceReward;
+        currentQuest.Complete();
     }
 }

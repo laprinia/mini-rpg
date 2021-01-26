@@ -23,10 +23,10 @@ public class DialogueManager : MonoBehaviour
     {
         instance = this;
     }
-    
+
     private void Start()
     {
-        sentences=new Queue<string>();
+        sentences = new Queue<string>();
     }
 
     public Button getFirstButton()
@@ -38,12 +38,15 @@ public class DialogueManager : MonoBehaviour
     {
         return secondButton;
     }
-    public void StartDialogue(Dialogue dialogue,String button1Text,String button2Text)
+
+    public void StartDialogue(Dialogue dialogue, String button1Text, String button2Text)
     {
         this.button1Text = button1Text;
         this.button2Text = button2Text;
+        firstButton.gameObject.SetActive(false);
+        secondButton.gameObject.SetActive(false);
         dialogCanvas.SetActive(true);
-        
+
         nameText.text = dialogue.name;
         sentences.Clear();
         foreach (var sentence in dialogue.sentences)
@@ -53,8 +56,7 @@ public class DialogueManager : MonoBehaviour
 
         DisplayNextSentence();
     }
-    
-   
+
 
     public void DisplayNextSentence()
     {
@@ -62,7 +64,8 @@ public class DialogueManager : MonoBehaviour
         {
             if (button1Text != null)
             {
-                firstButton.GetComponentInChildren<TextMeshProUGUI>().text = button1Text; 
+                firstButton.gameObject.SetActive(true);
+                firstButton.GetComponentInChildren<TextMeshProUGUI>().text = button1Text;
             }
             else
             {
@@ -71,6 +74,7 @@ public class DialogueManager : MonoBehaviour
 
             if (button2Text != null)
             {
+                secondButton.gameObject.SetActive(true);
                 secondButton.GetComponentInChildren<TextMeshProUGUI>().text = button2Text;
             }
             else
