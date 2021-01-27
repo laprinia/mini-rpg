@@ -5,11 +5,10 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
 
-
 public class Player : MonoBehaviour
 {
     public Quest currentQuest;
-    public int currentSP=0;
+    public int currentSP = 0;
     public int damageMultiplier = 2;
     public float attackCoolDown = 2f;
     public GameObject shuriken;
@@ -51,13 +50,12 @@ public class Player : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("in input button 0");
             if (EventSystem.current.IsPointerOverGameObject()) return;
 
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
-            {   Debug.Log(hit.collider.name);
+            {
                 agent.SetDestination(hit.point);
             }
         }
@@ -65,10 +63,8 @@ public class Player : MonoBehaviour
         {
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            Debug.Log("in input button 1");
             if (Physics.Raycast(ray, out hit))
             {
-                Debug.Log(hit.collider.name);
                 if (hit.transform.tag.Equals("Enemy"))
                 {
                     AttackEnemy(hit);
@@ -78,7 +74,7 @@ public class Player : MonoBehaviour
                     inventory.AddItem(hit.transform.GetComponent<Item>().itemObject, 1);
                     Destroy(hit.transform.gameObject);
                 }
-                else if(hit.transform.GetComponent<DialogueTrigger>())
+                else if (hit.transform.GetComponent<DialogueTrigger>())
                 {
                     NPCInteract(hit.transform.gameObject);
                 }
@@ -100,7 +96,7 @@ public class Player : MonoBehaviour
         {
             damageAmount = shurikenWeaponObject.damage * damageMultiplier;
             agent.SetDestination(hit.point);
-            StartCoroutine(GoAndAttackCoroutine("isThrowing", true,hit.collider.gameObject, damageAmount));
+            StartCoroutine(GoAndAttackCoroutine("isThrowing", true, hit.collider.gameObject, damageAmount));
         }
         else
         {
@@ -116,21 +112,17 @@ public class Player : MonoBehaviour
         Health entityHealth = entityGameObj.GetComponent<Health>();
         String entityName = entityGameObj.name;
         agent.stoppingDistance = isRanged ? 7.5f : 1.5f;
-        // if (isRanged)
-        // {
-        //     agent.stoppingDistance += 6f;
-        // }
 
         while (agent.pathPending)
         {
             yield return null;
         }
 
-        while (agent.remainingDistance >= agent.stoppingDistance+(isRanged?6f:0f))
+        while (agent.remainingDistance >= agent.stoppingDistance + (isRanged ? 6f : 0f))
         {
             yield return null;
         }
-        
+
         while (agent.velocity.sqrMagnitude != 0)
         {
             yield return null;
@@ -157,16 +149,17 @@ public class Player : MonoBehaviour
 
             yield return null;
         }
-        
-        if (entityName.Equals("Hanako")&& currentQuest.title.Equals("Family Bonds"))
+
+        if (entityName.Equals("Hanako") && currentQuest.title.Equals("Family Bonds"))
         {
             CompleteHanakoQuest();
         }
+
         isAttacking = false;
         animator.SetBool(animatorBool, false);
     }
 
-    void FaceTarget (Transform target)
+    void FaceTarget(Transform target)
     {
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
@@ -190,13 +183,15 @@ public class Player : MonoBehaviour
         {
             yield return null;
         }
-        
+
         while (agent.velocity.sqrMagnitude != 0)
         {
             yield return null;
         }
+
         dialogueTrigger.TriggerDialogue();
     }
+
     public void IncreaseSanity(int amount)
     {
         sanity += amount;
@@ -215,7 +210,7 @@ public class Player : MonoBehaviour
     private void CompleteHanakoQuest()
     {
         currentQuest.Goal.isHanakoAtPeace = true;
-        currentSP += currentQuest.experienceReward;
+        GetComponent<Spirit>().AddSpirit(currentQuest.experienceReward);
         currentQuest.Complete();
     }
 }

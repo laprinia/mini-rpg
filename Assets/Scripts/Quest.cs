@@ -20,8 +20,6 @@ public class Quest
 
     public void Complete()
     {
-        
-        //todo show canvas
         isActive = false;
         GameObject.Destroy(questGiver);
         descriptionText.text = "You completed the quest! Mieruki is at peace and can depart now";
