@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-   public QuestGiver questGiver;
+    public Player player;
+    public QuestGiver questGiver;
     public Dialogue mainDialogue;
     public Dialogue questDialogue;
     public Dialogue conversateDialogue;
     public Dialogue denyQuestDialogue;
     public Dialogue acceptQuestDialogue;
+    public Dialogue tooWeakDialogue;
 
     public void TriggerDialogue()
     {
@@ -36,8 +38,16 @@ public class DialogueTrigger : MonoBehaviour
     }
     public void onClickAccept()
     {
-       DialogueManager.instance.StartDialogue(acceptQuestDialogue,null,null);
-       questGiver.OpenQuestWindow();
+       if (player.GetComponent<Luck>().curLuck >= 50)
+       {
+          DialogueManager.instance.StartDialogue(acceptQuestDialogue,null,null);
+          questGiver.OpenQuestWindow();
+       }
+       else
+       {
+          DialogueManager.instance.StartDialogue(tooWeakDialogue,null,null);
+       }
+       
        
     }
 

@@ -54,7 +54,7 @@ public class Enemy : MonoBehaviour,Entity
             FaceTarget();
             agent.SetDestination(target.position);
      ;
-            if(distance <= attackRadius && Time.time>=attackTimeStamp) 
+            if(distance <= attackRadius && Time.time>=attackTimeStamp ) 
             {
                 if (sanityScript.curSanity <= 0)
                 {
@@ -65,7 +65,6 @@ public class Enemy : MonoBehaviour,Entity
                 transform.GetChild(1).gameObject.SetActive(true);
                 animator.SetTrigger("isAttacking");
                 sanityScript.RemoveSanity(25);
-
             }
         }
         else if (Time.time>=walkTimeStamp)

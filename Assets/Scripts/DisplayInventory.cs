@@ -70,6 +70,7 @@ public class DisplayInventory : MonoBehaviour
             {
                 itemDisplayed.Remove(inventory.Container[i]);
                
+               
             }
             else
             {
@@ -125,12 +126,17 @@ public class DisplayInventory : MonoBehaviour
                 {
                     player.GetComponent<Sanity>().AddSanity(consumableObject.restorativePower);
                     slot.amount--;
-                    Destroy(gameObject);
+                    
+                    
                 }
                 else if (slot.item.name.Equals("Daruma") && player.GetComponent<Luck>().curLuck < 100)
                 {
                     player.GetComponent<Luck>().AddLuck(consumableObject.restorativePower);
                     slot.amount--;
+                   
+                }
+                if(slot.amount<=0){
+                    
                     Destroy(gameObject);
                 }
             }

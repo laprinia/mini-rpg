@@ -38237,6 +38237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b03f3e0006c63b44b7d4890c0c46ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1996415142}
   questGiver: {fileID: 919132148594510904}
   mainDialogue:
     name: Mieruko
@@ -38260,6 +38261,10 @@ MonoBehaviour:
     name: Mieruko
     sentences:
     - Bless you! I will be here waiting.
+  tooWeakDialogue:
+    name: Mieruko
+    sentences:
+    - 'Your intentions are not pure! Begone! '
 --- !u!65 &919132148594510903
 BoxCollider:
   m_ObjectHideFlags: 0
