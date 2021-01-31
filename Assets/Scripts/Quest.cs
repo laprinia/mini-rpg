@@ -18,11 +18,11 @@ public class Quest
     public string description;
     public int experienceReward;
 
-    public void Complete()
+    public void Complete(String text)
     {
         isActive = false;
         GameObject.Destroy(questGiver);
-        descriptionText.text = "You completed the quest! Mieruki is at peace and can depart now";
+        descriptionText.text = text;
         okButton.onClick.AddListener(OnClickOK);
         questWindow.SetActive(true);
         
