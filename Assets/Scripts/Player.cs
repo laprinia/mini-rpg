@@ -211,6 +211,6 @@ public class Player : MonoBehaviour
     {
         currentQuest.Goal.isHanakoAtPeace = true;
         GetComponent<Spirit>().AddSpirit(currentQuest.experienceReward);
-        currentQuest.Complete("You completed the quest! Mieruki is at peace and can depart now.");
+        currentQuest.Complete("You completed the quest! Mieruko is at peace and can depart now.");
     }
 }
